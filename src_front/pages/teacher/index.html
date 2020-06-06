@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>School Management</title>
+        <link rel="stylesheet" type="text/css" href="/src_front/assets/style.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js" defer></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+        <script src="/src_front/js/vueTeacher.js" defer></script>
+    </head>
+    <body>
+        <div id="app">
+            <h1>Teacher</h1>
+
+            <p>Name：<input type="text" name='teacherName' v-model="teacherName" v-bind:class="{'alert-color': !validate }" value='' size="40" placeholder="Please Enter Name"></p>
+            <p>Salary：<input type="text" name='teacherSalary' v-model="teacherSalary" value='' size="40"></p>
+
+            <button v-on:click="doAddTeacher" v-bind:disabled="!isEntered">
+                Add
+            </button>
+            <hr>
+            <table>
+                <thead v-pre>
+                    <tr>
+                        <th class="index">No</th>
+                        <th class="name">Name</th>
+                        <th class="salary">Salary</th>
+                        <th class="delete">Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="(teacher, index) in computedTeachers">
+                        <td class="index">{{ index + 1 }}</td>
+                        <td class="name">{{ teacher.name }}</td>
+                        <td class="salary">{{ teacher.salary }}</td>
+                        <td class="delete">
+                            <button v-on:click="doDeleteTeacher(teacher)">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

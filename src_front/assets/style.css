@@ -1,0 +1,51 @@
+.alert-color {
+    border-color: #ff0000;
+}
+table {
+    border-collapse: collapse;
+}
+thead, tbody {
+    display: block;
+}
+tbody {
+    height: 250px;
+    width: 592px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+th,td {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 0 8px;
+    line-height: 40px;
+}
+tr:nth-child(even) td{
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover td{
+    background-color: #ddd;
+}
+
+thead th {
+    background-color: #4CAF50;
+    border: 1px solid #ddd;
+    color: #ffffff;
+}
+th.index, td.index {
+    width: 50px;
+}
+th.name, td.name {
+    width: 100px;
+}
+th.memo, td.memo {
+    width: 200px;
+}
+th.state, td.state {
+    width: 70px;
+    text-align: center;
+}
+th.delete, td.delete {
+    width: 70px;
+    text-align: center;
+}
