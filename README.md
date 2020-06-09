@@ -24,6 +24,7 @@ go get github.com/jinzhu/gorm
 ```bash
 go run server.go
 ```
-After running server, application can be browse in following URL http://localhost:8080/schoolapp/ 
-=======
-# vue-go-mysql-sample-app
+
+####After running server, application can be browse in following URL http://localhost:8080/schoolapp/
+
+
