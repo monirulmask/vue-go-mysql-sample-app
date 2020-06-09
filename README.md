@@ -1,6 +1,6 @@
 # vue-go-mysql-sample-app
 
-This is sample project created with Go/Gin/Vue.js/MySQL. Form ORM i used gorm.
+This is sample project created with Go/Gin/Vue.js/MySQL. For ORM i have used gorm.
 ## How to run for development
 
 ### Step 1: Create Database named 'schoolmanagement'
@@ -25,6 +25,6 @@ go get github.com/jinzhu/gorm
 go run server.go
 ```
 
-####After running server, application can be browse in following URL http://localhost:8080/schoolapp/
+After running server, application can be browse in following URL http://localhost:8080/schoolapp/
 
 
