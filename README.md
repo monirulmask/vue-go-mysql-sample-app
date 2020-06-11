@@ -3,7 +3,7 @@
 This is sample project created with Go/Gin/Vue.js/MySQL. For ORM i have used gorm.
 ## How to run for development
 
-### Go version 1.14.4 has beed used for development.
+### Go version 1.14.4 has been used for development.
 
 ### Step 1: Create Database named 'schoolmanagement'
 
