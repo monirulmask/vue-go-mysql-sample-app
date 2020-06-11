@@ -22,7 +22,10 @@ go get github.com/go-sql-driver/mysql
 go get github.com/jinzhu/gorm
 ```
 
-### Step 5: Go to Source(vue-go-mysql-sample-app) Folder and type following Command
+### Step 5: Go to Source(/src_back/models/db/teacherDb.go) Change database "USER" and "PASS" name.
+
+
+### Step 6: Go to Source(vue-go-mysql-sample-app) Folder and type following Command
 ```bash
 go run server.go
 ```
